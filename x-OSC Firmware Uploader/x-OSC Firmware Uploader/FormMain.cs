@@ -53,7 +53,6 @@ namespace x_OSC_Firmware_Uploader
             Process process = Process.Start(processInfo);
             process.WaitForExit();
             process.Close();
-            this.Close();
         }
     }
 }
