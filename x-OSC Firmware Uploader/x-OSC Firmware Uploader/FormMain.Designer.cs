@@ -55,7 +55,7 @@
             this.buttonUpload.Location = new System.Drawing.Point(407, 307);
             this.buttonUpload.Name = "buttonUpload";
             this.buttonUpload.Size = new System.Drawing.Size(75, 23);
-            this.buttonUpload.TabIndex = 3;
+            this.buttonUpload.TabIndex = 5;
             this.buttonUpload.Text = "Upload";
             this.buttonUpload.UseVisualStyleBackColor = true;
             this.buttonUpload.Click += new System.EventHandler(this.button_upload_Click);
@@ -66,7 +66,7 @@
             this.labelHexFile.Location = new System.Drawing.Point(146, 178);
             this.labelHexFile.Name = "labelHexFile";
             this.labelHexFile.Size = new System.Drawing.Size(48, 13);
-            this.labelHexFile.TabIndex = 9;
+            this.labelHexFile.TabIndex = 2;
             this.labelHexFile.Text = "Hex File:";
             // 
             // textBoxHexFile
@@ -74,14 +74,14 @@
             this.textBoxHexFile.Location = new System.Drawing.Point(210, 175);
             this.textBoxHexFile.Name = "textBoxHexFile";
             this.textBoxHexFile.Size = new System.Drawing.Size(241, 20);
-            this.textBoxHexFile.TabIndex = 10;
+            this.textBoxHexFile.TabIndex = 3;
             // 
             // buttonBrowse
             // 
             this.buttonBrowse.Location = new System.Drawing.Point(457, 173);
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(25, 23);
-            this.buttonBrowse.TabIndex = 11;
+            this.buttonBrowse.TabIndex = 4;
             this.buttonBrowse.Text = "...";
             this.buttonBrowse.UseVisualStyleBackColor = true;
             this.buttonBrowse.Click += new System.EventHandler(this.button_browse_Click);
@@ -92,7 +92,7 @@
             this.labelSerialPort.Location = new System.Drawing.Point(146, 133);
             this.labelSerialPort.Name = "labelSerialPort";
             this.labelSerialPort.Size = new System.Drawing.Size(58, 13);
-            this.labelSerialPort.TabIndex = 12;
+            this.labelSerialPort.TabIndex = 0;
             this.labelSerialPort.Text = "Serial Port:";
             // 
             // comboBoxSerialPort
@@ -101,7 +101,7 @@
             this.comboBoxSerialPort.Location = new System.Drawing.Point(210, 130);
             this.comboBoxSerialPort.Name = "comboBoxSerialPort";
             this.comboBoxSerialPort.Size = new System.Drawing.Size(75, 21);
-            this.comboBoxSerialPort.TabIndex = 13;
+            this.comboBoxSerialPort.TabIndex = 1;
             // 
             // FormMain
             // 
