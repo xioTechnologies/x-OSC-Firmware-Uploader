@@ -52,7 +52,10 @@ namespace x_OSC_Firmware_Uploader
             processInfo.UseShellExecute = false;
             Process process = Process.Start(processInfo);
             process.WaitForExit();
-            process.Close();
+            if (process.ExitCode == -1)
+            {
+                MessageBox.Show("Upload failed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
