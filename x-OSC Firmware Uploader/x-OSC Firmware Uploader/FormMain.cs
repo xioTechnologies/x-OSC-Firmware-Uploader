@@ -27,7 +27,10 @@ namespace x_OSC_Firmware_Uploader
             {
                 comboBoxSerialPort.Items.Add(portName);
             }
-            comboBoxSerialPort.SelectedIndex = 0;
+            if (comboBoxSerialPort.Items.Count > 0)
+            {
+                comboBoxSerialPort.SelectedIndex = 0;
+            }
         }
 
         private void button_browse_Click(object sender, EventArgs e)
