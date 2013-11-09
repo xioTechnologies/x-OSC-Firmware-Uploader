@@ -56,7 +56,7 @@
             // buttonUpload
             // 
             this.buttonUpload.Enabled = false;
-            this.buttonUpload.Location = new System.Drawing.Point(276, 286);
+            this.buttonUpload.Location = new System.Drawing.Point(276, 289);
             this.buttonUpload.Name = "buttonUpload";
             this.buttonUpload.Size = new System.Drawing.Size(100, 38);
             this.buttonUpload.TabIndex = 5;
@@ -67,7 +67,7 @@
             // labelHexFile
             // 
             this.labelHexFile.AutoSize = true;
-            this.labelHexFile.Location = new System.Drawing.Point(146, 203);
+            this.labelHexFile.Location = new System.Drawing.Point(146, 208);
             this.labelHexFile.Name = "labelHexFile";
             this.labelHexFile.Size = new System.Drawing.Size(48, 13);
             this.labelHexFile.TabIndex = 2;
@@ -75,14 +75,14 @@
             // 
             // textBoxHexFile
             // 
-            this.textBoxHexFile.Location = new System.Drawing.Point(210, 200);
+            this.textBoxHexFile.Location = new System.Drawing.Point(210, 205);
             this.textBoxHexFile.Name = "textBoxHexFile";
             this.textBoxHexFile.Size = new System.Drawing.Size(261, 20);
             this.textBoxHexFile.TabIndex = 3;
             // 
             // buttonBrowse
             // 
-            this.buttonBrowse.Location = new System.Drawing.Point(477, 198);
+            this.buttonBrowse.Location = new System.Drawing.Point(477, 203);
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(25, 23);
             this.buttonBrowse.TabIndex = 4;
@@ -93,7 +93,7 @@
             // labelSerialPort
             // 
             this.labelSerialPort.AutoSize = true;
-            this.labelSerialPort.Location = new System.Drawing.Point(146, 166);
+            this.labelSerialPort.Location = new System.Drawing.Point(146, 171);
             this.labelSerialPort.Name = "labelSerialPort";
             this.labelSerialPort.Size = new System.Drawing.Size(58, 13);
             this.labelSerialPort.TabIndex = 0;
@@ -102,7 +102,7 @@
             // comboBoxSerialPort
             // 
             this.comboBoxSerialPort.FormattingEnabled = true;
-            this.comboBoxSerialPort.Location = new System.Drawing.Point(210, 163);
+            this.comboBoxSerialPort.Location = new System.Drawing.Point(210, 168);
             this.comboBoxSerialPort.Name = "comboBoxSerialPort";
             this.comboBoxSerialPort.Size = new System.Drawing.Size(75, 21);
             this.comboBoxSerialPort.TabIndex = 1;
@@ -113,7 +113,7 @@
             this.checkBoxCleanUpload.AutoSize = true;
             this.checkBoxCleanUpload.Checked = true;
             this.checkBoxCleanUpload.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxCleanUpload.Location = new System.Drawing.Point(212, 238);
+            this.checkBoxCleanUpload.Location = new System.Drawing.Point(212, 243);
             this.checkBoxCleanUpload.Name = "checkBoxCleanUpload";
             this.checkBoxCleanUpload.Size = new System.Drawing.Size(88, 17);
             this.checkBoxCleanUpload.TabIndex = 6;
@@ -124,7 +124,7 @@
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(144, 9);
+            this.labelTitle.Location = new System.Drawing.Point(147, 9);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(298, 29);
             this.labelTitle.TabIndex = 7;
@@ -133,7 +133,7 @@
             // labelInstructions
             // 
             this.labelInstructions.AutoSize = true;
-            this.labelInstructions.Location = new System.Drawing.Point(146, 68);
+            this.labelInstructions.Location = new System.Drawing.Point(152, 69);
             this.labelInstructions.Name = "labelInstructions";
             this.labelInstructions.Size = new System.Drawing.Size(196, 65);
             this.labelInstructions.TabIndex = 8;
