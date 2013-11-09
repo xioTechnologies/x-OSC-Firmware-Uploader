@@ -36,6 +36,9 @@
             this.buttonBrowse = new System.Windows.Forms.Button();
             this.labelSerialPort = new System.Windows.Forms.Label();
             this.comboBoxSerialPort = new System.Windows.Forms.ComboBox();
+            this.checkBoxCleanUpload = new System.Windows.Forms.CheckBox();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.labelInstructions = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,18 +56,18 @@
             // buttonUpload
             // 
             this.buttonUpload.Enabled = false;
-            this.buttonUpload.Location = new System.Drawing.Point(407, 307);
+            this.buttonUpload.Location = new System.Drawing.Point(276, 286);
             this.buttonUpload.Name = "buttonUpload";
-            this.buttonUpload.Size = new System.Drawing.Size(75, 23);
+            this.buttonUpload.Size = new System.Drawing.Size(100, 38);
             this.buttonUpload.TabIndex = 5;
             this.buttonUpload.Text = "Upload";
             this.buttonUpload.UseVisualStyleBackColor = true;
-            this.buttonUpload.Click += new System.EventHandler(this.button_upload_Click);
+            this.buttonUpload.Click += new System.EventHandler(this.buttonUpload_Click);
             // 
             // labelHexFile
             // 
             this.labelHexFile.AutoSize = true;
-            this.labelHexFile.Location = new System.Drawing.Point(146, 178);
+            this.labelHexFile.Location = new System.Drawing.Point(146, 203);
             this.labelHexFile.Name = "labelHexFile";
             this.labelHexFile.Size = new System.Drawing.Size(48, 13);
             this.labelHexFile.TabIndex = 2;
@@ -72,25 +75,25 @@
             // 
             // textBoxHexFile
             // 
-            this.textBoxHexFile.Location = new System.Drawing.Point(210, 175);
+            this.textBoxHexFile.Location = new System.Drawing.Point(210, 200);
             this.textBoxHexFile.Name = "textBoxHexFile";
-            this.textBoxHexFile.Size = new System.Drawing.Size(241, 20);
+            this.textBoxHexFile.Size = new System.Drawing.Size(261, 20);
             this.textBoxHexFile.TabIndex = 3;
             // 
             // buttonBrowse
             // 
-            this.buttonBrowse.Location = new System.Drawing.Point(457, 173);
+            this.buttonBrowse.Location = new System.Drawing.Point(477, 198);
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(25, 23);
             this.buttonBrowse.TabIndex = 4;
             this.buttonBrowse.Text = "...";
             this.buttonBrowse.UseVisualStyleBackColor = true;
-            this.buttonBrowse.Click += new System.EventHandler(this.button_browse_Click);
+            this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
             // 
             // labelSerialPort
             // 
             this.labelSerialPort.AutoSize = true;
-            this.labelSerialPort.Location = new System.Drawing.Point(146, 133);
+            this.labelSerialPort.Location = new System.Drawing.Point(146, 166);
             this.labelSerialPort.Name = "labelSerialPort";
             this.labelSerialPort.Size = new System.Drawing.Size(58, 13);
             this.labelSerialPort.TabIndex = 0;
@@ -99,16 +102,52 @@
             // comboBoxSerialPort
             // 
             this.comboBoxSerialPort.FormattingEnabled = true;
-            this.comboBoxSerialPort.Location = new System.Drawing.Point(210, 130);
+            this.comboBoxSerialPort.Location = new System.Drawing.Point(210, 163);
             this.comboBoxSerialPort.Name = "comboBoxSerialPort";
             this.comboBoxSerialPort.Size = new System.Drawing.Size(75, 21);
             this.comboBoxSerialPort.TabIndex = 1;
+            this.comboBoxSerialPort.DropDown += new System.EventHandler(this.comboBoxSerialPort_DropDown);
+            // 
+            // checkBoxCleanUpload
+            // 
+            this.checkBoxCleanUpload.AutoSize = true;
+            this.checkBoxCleanUpload.Checked = true;
+            this.checkBoxCleanUpload.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxCleanUpload.Location = new System.Drawing.Point(212, 238);
+            this.checkBoxCleanUpload.Name = "checkBoxCleanUpload";
+            this.checkBoxCleanUpload.Size = new System.Drawing.Size(88, 17);
+            this.checkBoxCleanUpload.TabIndex = 6;
+            this.checkBoxCleanUpload.Text = "Clean upload";
+            this.checkBoxCleanUpload.UseVisualStyleBackColor = true;
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(144, 9);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(298, 29);
+            this.labelTitle.TabIndex = 7;
+            this.labelTitle.Text = "x-OSC Firmware Uploader";
+            // 
+            // labelInstructions
+            // 
+            this.labelInstructions.AutoSize = true;
+            this.labelInstructions.Location = new System.Drawing.Point(146, 68);
+            this.labelInstructions.Name = "labelInstructions";
+            this.labelInstructions.Size = new System.Drawing.Size(196, 65);
+            this.labelInstructions.TabIndex = 8;
+            this.labelInstructions.Text = "1. Select serial port and firmware hex file\r\n\r\n2. Click upload button\r\n\r\n3. Power" +
+                " cycle x-OSC to start upload";
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 342);
+            this.ClientSize = new System.Drawing.Size(514, 342);
+            this.Controls.Add(this.labelInstructions);
+            this.Controls.Add(this.labelTitle);
+            this.Controls.Add(this.checkBoxCleanUpload);
             this.Controls.Add(this.comboBoxSerialPort);
             this.Controls.Add(this.labelSerialPort);
             this.Controls.Add(this.labelHexFile);
@@ -138,6 +177,9 @@
         private System.Windows.Forms.Button buttonBrowse;
         private System.Windows.Forms.Label labelSerialPort;
         private System.Windows.Forms.ComboBox comboBoxSerialPort;
+        private System.Windows.Forms.CheckBox checkBoxCleanUpload;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Label labelInstructions;
     }
 }
 
