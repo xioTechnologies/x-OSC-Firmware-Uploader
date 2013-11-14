@@ -93,7 +93,7 @@ namespace x_OSC_Firmware_Uploader
                     {
                         break;
                     }
-                    Thread.Sleep(3500);
+                    Thread.Sleep(1000);
                 }
                 uploadFirmware(textBoxHexFile.Text, false);
             } while (false);
